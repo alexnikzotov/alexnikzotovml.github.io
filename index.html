@@ -7808,22 +7808,27 @@ a.anchor-link {
 <p>В нашем распоряжении - данные по маркетинговым кампаниям банка (источник - <a href="https://archive.ics.uci.edu/dataset/222/bank+marketing">https://archive.ics.uci.edu/dataset/222/bank+marketing</a>).
 <br/>Наша задача - предсказать, оформит ли клиент срочный депозит, что является задачей классификации.
 <br/><br/>План работы следующий:</p>
-<p><br/><br/><span style="color:#aa88bb;"><b>1. Данные</b></span>
-<br/><span style="color:#aa88bb;">1.1 Базовый анализ данных</span>
-<br/><span style="color:#aa88bb;">1.2 Разделение на обучающую, валидационную и тестовую выборки</span>
-<br/><span style="color:#aa88bb;">1.3 Кодирование строковых столбцов</span>
-<br/><span style="color:#aa88bb;">1.4 Работа с числовыми признаками</span>
-<br/><br/><span style="color:#aa88bb;"><b>2. Модели</b></span>
-<br/><span style="color:#aa88bb;">2.1 Логистическая регрессия
-<br/><span style="color:#aa88bb;">2.2 Случайный лес
-<br/><span style="color:#aa88bb;">2.3 Градинетный бустинг XGBoost
-<br/><span style="color:#aa88bb;">2.4 Градинетный бустинг LightGBM
-<br/><span style="color:#aa88bb;">2.5 Градинетный бустинг CatBoost
-<br/><br/><span style="color:#aa88bb;"><b>3. Работа над ошибками</b></span>
-<br/><span style="color:#aa88bb;">3.1 Создание дополнительных признаков
-<br/><span style="color:#aa88bb;">3.2 Овер- и андермплинг
-<br/><span style="color:#aa88bb;">3.3 Повторная проба моделей
-<br/><span style="color:#aa88bb;">3.4 Итоги</span></span></span></span></span></span></span></span></span></p>
+<body>
+<div style="float:left; width:300px; height:200px; background:rgba(50, 50, 50, 0.4); box-shadow: 4px 4px 4px #eeeeee; border-radius:3px; text-align:left; border: solid #eeeeee 1px; padding:20px; margin:6px">
+<p style="text-align:center;"><a ;="" href="#prep" style="color:#aa88bb;"><b>1. Данные</b></a></p>
+<p><a ;="" href="#theclients" style="color:#aa88bb;">1.1 Базовый анализ данных</a>
+<br/><a ;="" href="#thecriminal" style="color:#aa88bb;">1.2 Разделение на обучающую, валидационную и тестовую выборки</a>
+<br/><a ;="" href="#thecriminal" style="color:#aa88bb;">1.3 Кодирование строковых столбцов</a>
+<br/><a ;="" href="#thecriminal" style="color:#aa88bb;">1.4 Работа с числовыми признаками</a></p></div>
+<div style="float:left; width:300px; height:200px; background:rgba(50, 50, 50, 0.4); box-shadow: 4px 4px 4px #eeeeee; border-radius:3px; border: solid #eeeeee 1px; text-align:left; padding:20px; margin:6px">
+<p style="text-align:center;"><a ;="" href="#thereputation" style="color:#aa88bb;"><b>2. Модели</b></a></p>
+<p><a ;="" href="#thecompanies" style="color:#aa88bb;">2.1 Логистическая регрессия</a>
+<br/><a ;="" href="#theoperations" style="color:#aa88bb;">2.2 Случайный лес</a>
+<br/><a ;="" href="#thepatterns" style="color:#aa88bb;">2.3 Градинетный бустинг XGBoost</a>
+<br/><a ;="" href="#thepatterns" style="color:#aa88bb;">2.4 Градинетный бустинг LightGBM</a>
+<br/><a ;="" href="#theexperts" style="color:#aa88bb;">2.5 Градинетный бустинг CatBoost</a></p></div>
+<div style="float:left; width:300px; height:200px; background:rgba(50, 50, 50, 0.4); box-shadow: 4px 4px 4px #eeeeee; border-radius:3px; border: solid #eeeeee 1px; text-align:left; padding:20px; margin:6px">
+<p style="text-align:center;"><a ;="" href="#theactualmonth" style="color:#aa88bb;"><b>3. Работа над ошибками</b></a></p>
+<p><a ;="" href="#theclients_act" style="color:#aa88bb;">3.1 Создание дополнительных признаков</a>
+<br/><a ;="" href="#thecriminal_act" style="color:#aa88bb;">3.2 Овер- и андермплинг</a>
+<br/><a ;="" href="#thecriminal_act" style="color:#aa88bb;">3.3 Повторная проба моделей</a>
+<br/><a ;="" href="#thecriminal_act" style="color:#aa88bb;">3.4 Итоги</a></p></div>
+</body>
 <p><br/><br/>Так начнём же.
 <br/><div style="background-color:#cccccc; height:1px; width:100%;"></div>
 <br/>Импортируем библиотеки и установим параметры:</p>
